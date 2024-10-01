@@ -81,8 +81,7 @@ form.contact * {
 }
 
 form.contact input[type=text], form.contact  textarea{
-	/*background: transparent;*/
-	opacity: 0.5;
+	background: rgba(255, 255, 255, 0.66);
 	border:0.25em solid #ffffff;
 	border-radius: 1em;
 	padding:0.25em 1em 0.25em 1em;
@@ -90,6 +89,18 @@ form.contact input[type=text], form.contact  textarea{
 
 form.contact label, form.contact button[type=submit] {
 	margin: 1em 0 0.5em 0;
+}
+
+div.confirmation {
+	visibility: hidden;
+	background: rgba(255, 255, 255, 0.66);
+	color:#000000;
+	width: 75%;
+	border-radius: 1em;
+}
+
+div.confirmation div.message {
+	padding:0.25em 1em 0.25em 1em;
 }
 
 div.header br {	

@@ -30,22 +30,30 @@
 </div>
 
 <div class="content">
+
 <h1>
 CONTACT<br />
 FORM
 </h1>
-<div class="contact">
-Get in touch!
-</div>
-<form class="contact">
+
+<div class="contact">Get in touch!</div>
+
+<form class="contact" onsubmit="return false">
 	<label for="name">Name</label>
 	<input type="text" name="name" placeholder="Enter your name"></input>
 	<label for="email">Email</label>
 	<input type="text" name="email" placeholder="Enter your email"></input>
-	<label for="name">Message</label>
-	<textarea id="userInput" rows="10" placeholder="Enter your message"></textarea>
-	<button type="submit" onclick="">Submit</button>
+	<label for="message">Message</label>
+	<textarea name="message" rows="10" placeholder="Enter your message"></textarea>
+	<button id="btnContact" type="submit" onclick="">Submit</button>
 </form>
+
+<div class="confirmation">
+<div class="message">
+Placeholder text is initially hidden.
+</div>
+</div>
+
 </div>
 
 </div>
@@ -53,6 +61,8 @@ Get in touch!
 <div class="footer">
 <div>&copy;2024 SunsetTravel</div>
 </div>
+
+<script src="./contact.js"></script>
 
 </body>
 </html>
