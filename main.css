@@ -1,0 +1,186 @@
+html { 
+	padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: url(bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+	padding: 0;
+    margin: 0;
+	font-family:"Trebuchet MS", sans-serif;
+	color: #ffffff;
+	/*background-color: #ffaaaa;*/
+}
+
+a, a:hover, a.visited {
+	color:#ffffff; 
+}
+
+div.header {
+	background-color: #000000;
+	padding: 1em;
+	clear: both;
+}
+
+div.header * {
+	display: inline;
+	clear:both;
+}
+
+div.header div.logo {
+	text-align: left;
+	vertical-align: middle;
+	font-stretch: 150%;
+}
+
+div.header div.name {
+	font-size:2em;
+	font-family:"Georgia", serif;
+	font-style: italic;
+	font-weight: bold;
+}
+
+div.header div.nav {
+	float: right;
+	vertical-align: middle;
+}
+
+div.header div.logo img {
+	height: 3em;
+    width: 3em;
+}
+
+div.header div.links {
+	vertical-align: middle;
+	margin:1em;
+} 
+
+div.header div.links a {
+	margin:0.5em;
+}
+
+div.header form.search {
+	text-align: right;
+	vertical-align: middle;
+}
+
+form input[type=text], textarea{
+	border-radius: 1em;
+	padding:0.25em 1em 0.25em 1em;
+}
+
+form.contact * {
+	display: block;
+	width: 75%;
+}
+
+form.contact input[type=text], form.contact  textarea{
+	/*background: transparent;*/
+	opacity: 0.5;
+	border:0.25em solid #ffffff;
+	border-radius: 1em;
+	padding:0.25em 1em 0.25em 1em;
+}
+
+form.contact label, form.contact button[type=submit] {
+	margin: 1em 0 0.5em 0;
+}
+
+div.header br {	
+	clear:both;
+}
+
+div.body * {
+	/*background-color: #aaaaff;*/
+}
+
+div.social {
+	float: left;
+	width:20%;
+	/*background-color: #00ff00;*/
+}
+
+div.social img {
+	height: 3em;
+    width: 3em;
+	display: block;
+	margin: 1em;
+	vertical-align: bottom;
+}
+
+div.content {
+	float:right;
+	width:80%;
+	/*background-color: #00ff88;*/
+}
+
+h1, h2 {
+	font-size: 300%;
+	margin: 0 0 0 0;
+	padding: 1em 1em 1em 0;
+	/*background-color: #0000ff;*/
+	font-weight: bold;
+	font-stretch: 250%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+div.introduction, div.about{
+	font-size: 100%;
+	padding: 1em 1em 1em 0;
+	width: 33%;
+	/*background-color: #ff0000;*/
+	font-stretch: 150%;
+}
+
+div.team {
+	display:table;
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+div.team div.member {
+	display: table-cell;
+	/*background-color:#6E140E;*/
+	background-image: linear-gradient(#EB7420, #6E140E);
+	border-radius: 1em;
+	border:0.25em solid #ff9920; /* FAC814 ffaaff */
+	
+	/*margin:1em;*/
+	padding: 1em;
+} 
+
+div.team div.member img{
+	width: 6em;
+	height: 6em;
+}
+
+em {
+	font-family:"Georgia", serif;
+	font-style: italic;
+	/*font-weight: bold;*/
+	text-decoration: underline;
+	/*background-color: #ffff88;*/
+	/*padding: 0 0.25em;*/
+	color: #ffffff;
+}
+
+div.footer {
+	clear:both;
+	margin:0;
+	padding:0;
+	/*background-color: #88ff00;*/
+}
+
+div.footer div {
+	margin:0;
+	padding: 1em;
+}
