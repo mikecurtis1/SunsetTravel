@@ -13,7 +13,8 @@ html {
 body {
 	padding: 0;
 	margin: 0;
-	font-family:"Trebuchet MS", sans-serif;
+	/*font-family:"Trebuchet MS", sans-serif;*/
+	font-family: gill sans, sans-serif;
 	color: #ffffff;
 	/*background-color: #ffaaaa;*/
 }
@@ -23,9 +24,10 @@ a, a:hover, a.visited {
 }
 
 div.header {
-	background-color: #000000;
+	background-color: rgba(0, 0, 0, 0.75);
 	padding: 1em;
-	clear: both;
+	/*clear: both;*/
+	height:5em;
 }
 
 div.header * {
@@ -131,13 +133,63 @@ div.content {
 	/*background-color: #00ff88;*/
 }
 
+div#searchResults {
+	visibility:hidden;
+	background-color: rgba(255, 200, 255, 0.5);
+	/*background-color: rgba(75, 50, 75, 0.9);
+	color:#ffffff;*/
+	position:absolute;
+	top:7em; /* 2 em less than div.header height */
+	right:0;
+	z-index: 100;
+	padding: 1em;
+	width:50%;
+}
+
+div#searchResults h2{
+	font-family: gill sans, sans-serif;
+	font-weight:normal;
+	font-size: 150%;
+	background-color: #ffffff;
+	color:#000000;
+	padding:0.25em;
+}
+
+div#searchResults div.match{
+	background-color: rgba(255, 255, 255, 0.85);
+	color:#000000;
+	margin:1em 0;
+	padding:1em;
+}
+
+div#searchResults div.match  div{
+	margin: 0.5em 0;
+}
+
+div#searchResults div.match  div.imageUrl img{
+	width: 100%;
+}
+
+div#searchResults div.match  div.name{
+	font-family: gill sans, sans-serif;
+}
+
+div#searchResults div.match  div.description{
+	font-size:90%;
+	font-family: palatino, serif;
+	color: #665566;
+	letter-spacing: .07em;
+}
+
+div#searchResults div.match  button{}
+
 h1, h2 {
 	font-size: 300%;
 	margin: 0 0 0 0;
 	padding: 1em 1em 1em 0;
 	/*background-color: #0000ff;*/
 	font-weight: bold;
-	font-stretch: 250%;
+	/*font-stretch: 250%;*/
 }
 
 h2 {
@@ -149,7 +201,7 @@ div.introduction, div.about{
 	padding: 1em 1em 1em 0;
 	width: 33%;
 	/*background-color: #ff0000;*/
-	font-stretch: 150%;
+	/*font-stretch: 150%;*/
 }
 
 div.team {
@@ -161,9 +213,10 @@ div.team {
 div.team div.member {
 	display: table-cell;
 	/*background-color:#6E140E;*/
-	background-image: linear-gradient(#EB7420, #6E140E);
+	/*background-image: linear-gradient(#EB7420, #6E140E);*/
+	background-image: linear-gradient(#886688, #443344);
 	border-radius: 1em;
-	border:0.25em solid #ff9920; /* FAC814 ffaaff */
+	border:0.12em solid #ccaacc; /* FAC814 ffaaff ff9920 */
 	/*margin:1em;*/
 	padding: 1em;
 } 
