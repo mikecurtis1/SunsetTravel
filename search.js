@@ -5,7 +5,7 @@ const searchResults = document.getElementById('searchResults');
 
 function runSearch() {
     fetch('./travel_recommendation_api.json')
-	.then(response => response.json())
+    .then(response => response.json())
     .then((jsonData)=>{
 		var needle = inputBox.value.trim().toLowerCase();
 		var len = needle.length;
