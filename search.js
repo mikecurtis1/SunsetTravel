@@ -43,7 +43,6 @@ function runSearch() {
 function formatMatches(matches){
 	var html = '<h2>Matches</h2>';
 	matches.forEach((match)=>{
-		console.log(match)
 		html += `
 		<div class="match">
 		<div class="imageUrl"><img src="${match.imageUrl}" /></div>
