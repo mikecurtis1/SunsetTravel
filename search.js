@@ -4,9 +4,9 @@ const btnReset = document.getElementById('btnReset');
 const searchResults = document.getElementById('searchResults');
 
 function runSearch() {
-    fetch('./travel_recommendation_api.json')
-    .then(response => response.json())
-    .then((jsonData)=>{
+	fetch('./travel_recommendation_api.json')
+	.then(response => response.json())
+	.then((jsonData)=>{
 		var needle = inputBox.value.trim().toLowerCase();
 		var len = needle.length;
 		var minLen = 2;
@@ -34,7 +34,7 @@ function runSearch() {
 		if(matches.length > 0){
 			formatMatches(matches);
 		}
-    })
+	})
 	.catch(error => {
 	console.error('Error:', error);
 	});
